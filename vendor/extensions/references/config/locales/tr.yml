@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      references:
+        title: References
+    references:
+      admin:
+        references:
+          actions:
+            create_new: Yeni Ekle Reference
+            reorder: Tekrar sirala References
+            reorder_done: Tekrar siralama tamamlandiReferences
+          records:
+            title: References
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir References yok henuz.  Tikla "Yeni Ekle Reference" eklemek senin ilk reference.
+          reference:
+            view_live_html: Bunu canlu reference goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle reference
+            delete: Bunu Sil reference sonsuza dek
+      references:
+        show:
+          other: Diger References
+  activerecord:
+    attributes:
+      'refinery/references/reference':
+        title: Title
+        name: Name
+        photo: Photo
+        phone: Phone

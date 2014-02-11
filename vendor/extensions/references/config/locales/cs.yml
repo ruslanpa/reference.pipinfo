@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      references:
+        title: References
+    references:
+      admin:
+        references:
+          actions:
+            create_new: Přidat Reference
+            reorder: Řadit References
+            reorder_done: Konec řazení References
+          records:
+            title: References
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné References. Zvolte "Přidat Reference" pro přidání prvního reference.
+          reference:
+            view_live_html: Zobrazit náhled reference<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit reference
+            delete: Smazat reference
+      references:
+        show:
+          other: Další References
+  activerecord:
+    attributes:
+      'refinery/references/reference':
+        title: Title
+        name: Name
+        photo: Photo
+        phone: Phone
