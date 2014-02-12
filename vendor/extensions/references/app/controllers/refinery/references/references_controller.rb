@@ -2,10 +2,11 @@ module Refinery
   module References
     class ReferencesController < ::ApplicationController
 
-      before_filter :find_all_references
+      #before_filter :find_all_references
       before_filter :find_page
 
       def index
+        @references = Reference.search(params[:search])
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @reference in the line below:
         present(@page)

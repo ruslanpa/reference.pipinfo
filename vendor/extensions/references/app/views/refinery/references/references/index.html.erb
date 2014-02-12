@@ -6,13 +6,15 @@
         </fieldset>
     <% end %>
 
-    <% @references.each do |reference| %>
-        <div class="reference">
-          <label class="ref-id"><%= reference.id %></label>
-          <label class="ref-name"><%= reference.name %></label>
-          <label class="ref-title"><%= reference.title %></label>
-          <label class="tel">Tel: <%= reference.phone %></label>
-        </div>
+    <% if @references %>
+        <% @references.each do |reference| %>
+            <div class="reference">
+              <label class="ref-id"><%= reference.id %></label>
+              <label class="ref-name"><%= reference.name %></label>
+              <label class="ref-title"><%= reference.title %></label>
+              <label class="tel">Tel: <%= reference.phone %></label>
+            </div>
+        <% end %>
     <% end %>
 
 <% end %>

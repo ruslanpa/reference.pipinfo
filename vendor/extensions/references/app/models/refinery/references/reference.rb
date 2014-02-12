@@ -8,6 +8,12 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
+
+      def self.search(search)
+        if search
+          find(:all, :conditions => ['LOWER(title) LIKE ?', "%#{ search.mb_chars.downcase.to_s }%"]) unless search.empty?
+        end
+      end
     end
   end
 end
