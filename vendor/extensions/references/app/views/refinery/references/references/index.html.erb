@@ -1,11 +1,20 @@
 <% content_for :body do %>
-  <ul id="references">
-    <% @references.each do |reference| %>
-      <li>
-        <%= link_to reference.title, refinery.references_reference_path(reference) %>
-      </li>
+    <%= form_tag("/references", method: "get", class: "pure-form search") do %>
+        <fieldset>
+          <%= text_field_tag :search, params[:search], :class => "search-box" %>
+          <%= submit_tag "Search", :name => nil, :class => "pure-button button-secondary" %>
+        </fieldset>
     <% end %>
-  </ul>
+
+    <% @references.each do |reference| %>
+        <div class="reference">
+          <label class="ref-id"><%= reference.id %></label>
+          <label class="ref-name"><%= reference.name %></label>
+          <label class="ref-title"><%= reference.title %></label>
+          <label class="tel">Tel: <%= reference.phone %></label>
+        </div>
+    <% end %>
+
 <% end %>
 
 <%= render '/refinery/content_page' %>

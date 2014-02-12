@@ -1,3 +1,5 @@
+$primary-bg-color: #3b8bba;
+
 body {
   font-family: Tahoma, Helvetica, Arial, Sans-Serif;
   background: #fafafa;
@@ -6,7 +8,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #3b8bba;
+  color: $primary-bg-color;
 }
 
 footer {
@@ -22,14 +24,6 @@ footer p {
   font-size: 80%;
 }
 
-//#body, #side_body {
-//  float: left;
-//  width: 45%;
-//  background: #ffffff;
-//  color: #333;
-//  padding: 20px;
-//}
-
 #menu ul {
   list-style: none;
   padding: 0px;
@@ -43,7 +37,7 @@ footer p {
       color: white;
     }
     &.selected a, a:hover {
-      background: #3b8bba;
+      background: $primary-bg-color;
     }
   }
 }
@@ -73,3 +67,54 @@ footer p {
   text-align: center;
   font-size: 170%;
 }
+
+.search-box {
+  width: 350px;
+  height: 35px;
+}
+
+.button-secondary {
+  background: $primary-bg-color;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  text-align: center;
+  padding-top: 20px;
+}
+
+// begin reference item
+
+.reference {
+  border: 1px solid #c2c2c2;
+  box-shadow: 0 0px 3px 0 #c2c2c2;
+  color: #777777;
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+
+.ref-title {
+  background: $primary-bg-color;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.tel {
+  float: right;
+}
+
+.ref-title, .tel {
+  font-size: 90%;
+}
+
+.ref-id {
+  border-right: 1px solid #c2c2c2;
+  padding-right: 5px;
+}
+
+// end
