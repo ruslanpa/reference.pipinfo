@@ -22,13 +22,13 @@ footer p {
   font-size: 80%;
 }
 
-#body, #side_body {
-  float: left;
-  width: 45%;
-  background: #ffffff;
-  color: #333;
-  padding: 20px;
-}
+//#body, #side_body {
+//  float: left;
+//  width: 45%;
+//  background: #ffffff;
+//  color: #333;
+//  padding: 20px;
+//}
 
 #menu ul {
   list-style: none;
@@ -61,4 +61,15 @@ footer p {
   display: inline-block;
   float: right;
   padding-top: 8px;
+}
+
+#page {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#body_content_title {
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  font-size: 170%;
 }
