@@ -1,14 +1,14 @@
 $primary-bg-color: #3b8bba;
 
 body {
-  font-family: Tahoma, Helvetica, Arial, Sans-Serif;
-  background: #fafafa;
+  font-family: Tahoma, Helvetica, Arial, Sans-Serif;  
   color: #777;
 }
 
 a {
   text-decoration: none;
   color: $primary-bg-color;
+  background: #cccccc;
 }
 
 footer {
@@ -30,6 +30,8 @@ footer p {
   li {
     float: left;
     margin-right: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 3px;
     a {
       display: block;
       padding: 5px 10px;
@@ -43,12 +45,11 @@ footer p {
 }
 
 #header {
-  background-color: #191818;
+  /*background-color: #191818;*/
 }
 
 #logo {
-  display: inline-block;
-  margin-left: 5px;
+  display: inline-block;  
 }
 
 #menu {
@@ -117,4 +118,7 @@ footer p {
   padding-right: 5px;
 }
 
-// end
+.top-header {
+  margin: 0 auto;
+  width: 960px;  
+}
